@@ -1,3 +1,7 @@
+  a {
+  text-decoration: none;
+  color: #25B4CE;
+}
 .home-page-header {
   display: flex;
   justify-content: space-between;
@@ -49,9 +53,9 @@
 }
 .video-container {
   width: 100%;
-  border: 0px solid #EEEEEE;
+  /*border: 0 solid #EEEEEE;*/
   border-radius: 10px;
-  box-shadow: 0px 1px 1px #C5C5C5;
+  box-shadow: 0 1px 1px #C5C5C5;
 }
 .video-still {
   width: 100%;
@@ -64,10 +68,12 @@
   position: absolute;
 }*/
 
+/*BADGES SECTION*/
+
 .badge-section-body {
   background: #F6F8F8;
   width: 100%;
-  height: 3150px;
+  /*height: 3250px;*/
 }
 .start-learning {
   padding: 45px 10px 5px;
@@ -79,17 +85,160 @@
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
-.badge-container {
+.badge-container-container {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 60px;
+  flex-wrap: wrap;
+  /*width: 80%*/
+  position: relative;
+  max-width: 780px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: space-around;
+}
+.badge-container {
+  /*flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   height: 300px;
-  width: 80%;
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 1px 1px #C5C5C5;
+}
+.upper-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -45px;
+}
+.badge-circle {
+  background: #fff;
+  position: relative;
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+  border-spacing: 5px;
+  box-shadow: 0 1px 1px #C5C5C5;
+  margin-bottom: 20px;
+}
+.badge-img {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.language-header {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.language-intro {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.badge-button {
+  text-align: center;
+  position: relative;
+  top: -25px;
+}
+.path-button {
+  background-color: #25B4CE;
+  height: 40px;
+  width: 180px;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 1px solid #25B4CE;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.view-path {
+  font-weight: bold;
+  font-size: 13px;
+}
+.lower-badge {
+  background: #FCFDFC;
+  border-top: 1px solid #E6EBEC;
+  height: 65px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0px 1px 1px #C5C5C5;
 }
+.get-started {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #B7C5CF;
+  text-align: center;
+}
+.try-link {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/*HOW CODESCHOOL WORKS SECTION*/
+
+.howcodeschoolworks {
+  padding: 45px 10px 5px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+.howcodeschoolworks-img img {
+  width: 410px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+#howcodeschoolworks-header {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: -10px;
+  font-size: 16px;
+}
+.howcodeschoolworks-text p {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 20%;
+  /*margin-bottom: 30px;*/
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/*JOIN US SECTION*/
+
+
+
+@media (min-width: 768px) {
+  .badge-section-body {
+    height: 1850px;
+  }
+  .badge-container {
+    flex-basis: 45%;
+    /*height: 360px;*/
+    max-width: 75em;
+  }
+  .start-learning {
+    font-size: 31px;
+  }
+  #learning-intro-text {
+    font-size: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .home-page-video-intro {
+
+  }
+}
+@media (min-width: 1024px) {
+  .badge-container {}
